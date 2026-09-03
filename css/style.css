@@ -172,28 +172,12 @@ section{ position:relative; }
   align-items:center;
   gap:12px;
 }
-.brand-mark{
-  width:52px; height:52px;
-  border-radius:50%;
-  border:2px solid #86868c;
-  background:var(--black-soft);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex:none;
-  position:relative;
+.brand-logo{
+  height:40px;
+  width:auto;
+  display:block;
 }
-.brand-mark svg{ width:26px; height:26px; }
-.brand-word{
-  font-family:var(--font-head);
-  font-weight:700;
-  font-size:17px;
-  letter-spacing:.03em;
-  line-height:1.1;
-  text-transform:uppercase;
-}
-.brand-word span{ display:block; color:var(--gray); font-size:13px; letter-spacing:.14em; font-weight:500; }
-.brand-word b{ color:var(--yellow); }
+.footer-brand .brand-logo{ height:46px; }
 
 .main-nav{ display:flex; align-items:center; gap:40px; }
 .main-nav a{
