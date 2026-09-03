@@ -20,6 +20,7 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Real logo + favicon (cropped from the real file)
 - [x] Real phone number, ACN, five-service lineup everywhere
 - [x] Meta Pixel installed sitewide
+- [x] Microsoft Clarity installed sitewide (project ycho1cktfn)
 - [x] JSON-LD: LocalBusiness/Electrician, BreadcrumbList, FAQPage schema
 - [x] robots.txt + sitemap.xml (54 URLs)
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
@@ -27,5 +28,10 @@ Tracking what's left before this site is fully ready to replace the live one.
 ## Worth considering later (not asked for yet)
 
 - Per-town pages for Audio Visual / Control & Automation / Communications (skipped — those are commercial/venue services, less likely to carry local "near me" search traffic than Electrical/Antennas, but can add if you want full parity with the live site)
-- Google Analytics / Google Search Console verification tag
+- **Google Analytics 4** — need your Measurement ID (`G-XXXXXXX`)
+- **Google Search Console** — need a verification meta tag or DNS record
+- **Google Ads conversion tracking** — only relevant once you're running Google Ads; would track form submits + phone clicks as conversions
+- **Google Tag Manager** — worth moving Meta Pixel + Clarity into one GTM container instead of hardcoded snippets, so future tags don't need a code change
+- **Google Business Profile** — not code, but the single highest-value thing for local search ("electrician near me" / Maps pack); make sure it's claimed and fully filled out
+- Real social profile URLs (Facebook, Instagram, LinkedIn) for the footer icons, currently linking nowhere
 - Compressed/optimized image pipeline once real photos are in (currently only the logo + favicon are raster assets)
