@@ -5,30 +5,33 @@ Tracking what's left before this site is fully ready to replace the live one.
 ## Blocking / needs real data from you
 
 - [ ] **Real email address** — footer/contact still use a placeholder (`info@goodallelectrical.com.au`). Confirm if that's actually correct or swap it.
-- [ ] **Real street address** — only "Sale, VIC 3850" is used (no street number). Fine for schema/local SEO as-is, but confirm if you want a full address shown.
-- [ ] **Licence / REC number** — removed the old placeholder badge; only ACN (684 711 224) shows now. Add licence number if you want it displayed.
-- [ ] **Photos** — every project tile, service page and blog post currently uses an abstract gradient/grid placeholder (no real jobsite photos, team photos, or venue shots). This is the single biggest thing standing between this site and looking fully "real." Send photos (via GitHub upload, same as the logo) whenever you have them and I'll swap them in.
+- [ ] **Real street address** — only "Sale, VIC" is used (no street number). Fine for schema/local SEO as-is, but confirm if you want a full address shown.
+- [ ] **Licence / REC number** — only ACN (684 711 224) shows. Add licence number if you want it displayed.
+- [ ] **Photos** — every project tile, service page and blog post still uses an abstract gradient/grid placeholder — no real jobsite photos, team photos, or venue shots anywhere on the site. This is the single biggest thing standing between this site and looking fully "real." Send photos (via GitHub upload, same as the logo) whenever you have them and I'll swap them in everywhere they're needed.
 - [ ] **Social links** — Facebook/Instagram/LinkedIn icons in the footer currently link to `#` (nowhere). Send the real profile URLs.
-- [ ] **Testimonials page** — your live site has one (`/testimonials`), this rebuild doesn't yet. Let me know if you want it built.
-- [ ] **Individual project detail pages** — your live site links each project card to its own page (`/projects/sale-greyhound-av` etc.); this rebuild's project cards currently all point back to the projects listing. Can build these out if wanted.
+- [ ] **Real testimonials** — testimonials.html currently has only the one quote already used on the homepage. Send more client feedback to fill it out.
 
 ## Done
 
 - [x] Full site build (home, services, projects, blog + posts, about, contact)
 - [x] Five dedicated service pages with real copy/rates/FAQ (Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
-- [x] 40 town landing pages (20 towns × Electrical + TV Antennas)
+- [x] 40 service+town landing pages (20 towns × Electrical + TV Antennas)
+- [x] 20 general area hub pages (one per town, covering all five services) — footer "Areas" column links to these
+- [x] 9 individual project detail pages, linked from every project card sitewide
+- [x] Testimonials page
+- [x] Privacy Policy page (discloses GA4, Meta Pixel, Clarity)
+- [x] 404 page
+- [x] HTML sitemap page (sitemap.html) + XML sitemap (sitemap.xml, 86 URLs) + robots.txt
 - [x] Real logo + favicon (cropped from the real file)
 - [x] Real phone number, ACN, five-service lineup everywhere
-- [x] Meta Pixel installed sitewide
-- [x] Microsoft Clarity installed sitewide (project ycho1cktfn)
-- [x] Google Analytics 4 installed sitewide (G-7EFYLCRE8E), with explicit per-page title/path on GA4 + Meta Pixel
-- [x] JSON-LD: LocalBusiness/Electrician, BreadcrumbList, FAQPage schema
-- [x] robots.txt + sitemap.xml (54 URLs)
+- [x] Meta Pixel, Microsoft Clarity, and Google Analytics 4 installed sitewide, with explicit per-page title/path
+- [x] JSON-LD: LocalBusiness/Electrician, BreadcrumbList, FAQPage schema (217 blocks, all validated)
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
+- [x] Zero broken internal links across all 87 pages (checked programmatically)
 
 ## Worth considering later (not asked for yet)
 
-- Per-town pages for Audio Visual / Control & Automation / Communications (skipped — those are commercial/venue services, less likely to carry local "near me" search traffic than Electrical/Antennas, but can add if you want full parity with the live site)
+- Per-town service pages for Audio Visual / Control & Automation / Communications (skipped — those are commercial/venue services, less likely to carry local "near me" search traffic than Electrical/Antennas; the general area hub pages already link to the main service pages for these three)
 - **Google Search Console** — need a verification meta tag or DNS record
 - **Google Ads conversion tracking** — only relevant once you're running Google Ads; would track form submits + phone clicks as conversions
 - **Google Local Services Ads (Google Guaranteed)** — pay-per-lead, badge shows above regular search ads, strong fit for a trades business
@@ -37,5 +40,4 @@ Tracking what's left before this site is fully ready to replace the live one.
 - **Bing Places** — free, Bing's equivalent of Google Business Profile
 - **Nextdoor** — hyper-local community app, growing for trade recommendations in Australia
 - **Google Business Profile** — not code, but the single highest-value thing for local search ("electrician near me" / Maps pack); make sure it's claimed and fully filled out
-- Real social profile URLs (Facebook, Instagram, LinkedIn) for the footer icons, currently linking nowhere
 - Compressed/optimized image pipeline once real photos are in (currently only the logo + favicon are raster assets)

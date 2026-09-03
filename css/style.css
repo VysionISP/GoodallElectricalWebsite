@@ -428,8 +428,8 @@ section{ position:relative; }
 .site-footer{ padding:80px 0 0; border-top:1px solid var(--border-soft); }
 .footer-grid{
   display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1fr;
-  gap:40px;
+  grid-template-columns:1.3fr 0.9fr 0.9fr 0.9fr 0.9fr;
+  gap:32px;
   padding-bottom:60px;
 }
 .footer-brand p{ color:var(--gray); margin-top:18px; font-size:14px; max-width:280px; }
