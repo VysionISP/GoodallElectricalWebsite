@@ -33,8 +33,21 @@ document.addEventListener('DOMContentLoaded', function () {
     onScroll();
   }
 
-  // Reveal-on-scroll
+  // Reveal-on-scroll, staggered when siblings share a grid/list parent
   var revealEls = document.querySelectorAll('.reveal');
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion) {
+    var staggerCounts = new WeakMap();
+    revealEls.forEach(function (el) {
+      var parent = el.parentElement;
+      if (!parent) return;
+      var i = staggerCounts.get(parent) || 0;
+      if (i > 0 && i < 8) {
+        el.style.transitionDelay = (i * 70) + 'ms';
+      }
+      staggerCounts.set(parent, i + 1);
+    });
+  }
   if ('IntersectionObserver' in window && revealEls.length) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -47,6 +60,37 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(function (el) { io.observe(el); });
   } else {
     revealEls.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  // Animated count-up for stat numbers (skips anything without a leading digit)
+  var statEls = document.querySelectorAll('.stat b, .stat-mini b');
+  if (statEls.length && !reduceMotion && 'IntersectionObserver' in window) {
+    var countUp = function (el) {
+      var raw = el.textContent.trim();
+      var match = raw.match(/^(\d+)(.*)$/);
+      if (!match) return; // e.g. "Local", "Gippsland" — nothing numeric to animate
+      var target = parseInt(match[1], 10);
+      var suffix = match[2];
+      var start = null;
+      var duration = 900;
+      var step = function (ts) {
+        if (start === null) start = ts;
+        var progress = Math.min((ts - start) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (progress < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    var statIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          countUp(entry.target);
+          statIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    statEls.forEach(function (el) { statIo.observe(el); });
   }
 
   // Project filter (projects.html)
