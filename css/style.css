@@ -173,11 +173,11 @@ section{ position:relative; }
   gap:12px;
 }
 .brand-logo{
-  height:40px;
+  height:56px;
   width:auto;
   display:block;
 }
-.footer-brand .brand-logo{ height:46px; }
+.footer-brand .brand-logo{ height:56px; }
 
 .main-nav{ display:flex; align-items:center; gap:40px; }
 .main-nav a{
