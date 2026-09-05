@@ -31,7 +31,8 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Real logo + favicon (cropped from the real file)
 - [x] Real phone number, ACN, five-service lineup everywhere
 - [x] Meta Pixel, Microsoft Clarity, and Google Analytics 4 installed sitewide, with explicit per-page title/path
-- [x] JSON-LD: LocalBusiness/Electrician, BreadcrumbList, FAQPage schema (217 blocks, all validated)
+- [x] JSON-LD: LocalBusiness/Electrician, Service (with per-town areaServed), BreadcrumbList, FAQPage schema (506 blocks, all validated)
+- [x] Linked the "Where We Work" town pills on services.html to the 20 area hub pages (were previously plain, non-clickable text, and listed two towns — Wonthaggi, Warragul — with no page behind them)
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
 - [x] Zero broken internal links across all 148 pages (checked programmatically)
 
