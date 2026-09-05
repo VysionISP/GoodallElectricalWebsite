@@ -13,6 +13,11 @@ Tracking what's left before this site is fully ready to replace the live one.
 
 ## Done
 
+- [x] CBUS lighting control &amp; automation landing page (service-control-automation-cbus), linked from the Control & Automation hub — full SEO stack, wall plate design section, FAQ
+- [x] SEO-STATUS.md — auto-generated audit of every page (which schema/tags are present), regenerate via the audit script rather than hand-editing
+- [x] llms.txt at site root — structured summary for AI/LLM crawlers to read and index
+- [x] robots.txt updated to explicitly welcome known AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, etc.)
+- [x] Clean URLs sitewide (no .html) — see deploy/nginx.conf.example and deploy/apache.htaccess.example for the Ubuntu VM server config needed to serve them
 - [x] Full site build (home, services, projects, blog + posts, about, contact)
 - [x] Five dedicated service pages with real copy/rates/FAQ (Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
 - [x] 40 service+town landing pages (20 towns × Electrical + TV Antennas)

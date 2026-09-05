@@ -1,0 +1,29 @@
+# Goodall Electrical
+
+> Family-owned electrical, audio visual, control & automation, communications and TV antenna contractor based in Sale, Victoria, servicing all of Gippsland. Licensed electricians (ACN 684 711 224), 24/7 emergency callout, fixed hourly rates: $149 inc GST service call (first 30 min, business hours), $125/hr + GST after that, $195/hr + GST after-hours and weekends.
+
+Goodall Electrical is a single licensed crew covering five trades — electrical, audio visual, control & automation (including CBUS), communications/networking, and TV antenna installation — for residential and commercial customers across Gippsland, Victoria, Australia. Phone: 03 4130 5012. Email: info@goodallelectrical.com.au.
+
+## Services
+
+- [Electrical](https://www.goodallelectrical.com.au/service-electrical): Switchboard upgrades, EV chargers, three-phase, rewires, lighting, compliance.
+- [Audio Visual](https://www.goodallelectrical.com.au/service-audio-visual): Venue AV for pubs, clubs and function rooms — source switching, multi-zone audio, projectors, touch-panel control.
+- [Control & Automation](https://www.goodallelectrical.com.au/service-control-automation): Lighting, HVAC and venue control automation (Crestron, KNX, custom).
+- [CBUS Lighting Control](https://www.goodallelectrical.com.au/service-control-automation-cbus): Wired CBUS lighting/automation network installation, wall plate design, scene control.
+- [Communications & Networks](https://www.goodallelectrical.com.au/service-communications): Structured cabling, Wi-Fi design, CCTV, EFTPOS/POS networks.
+- [TV Antennas](https://www.goodallelectrical.com.au/service-antennas): New installs, storm-damage repair, signal diagnosis, extra TV points. Matchmaster antennas as standard.
+
+Each service above also has dedicated pages for individual Gippsland towns (Electrical and TV Antennas only) at URLs like `/service-electrical-sale`, `/service-antennas-maffra`, etc. — see [/sitemap](https://www.goodallelectrical.com.au/sitemap) for the full list.
+
+## Company
+
+- [About](https://www.goodallelectrical.com.au/about): Company background, credentials, values.
+- [Projects](https://www.goodallelectrical.com.au/projects): Completed jobs across hospitality, commercial and residential.
+- [Testimonials](https://www.goodallelectrical.com.au/testimonials): Client feedback.
+- [Blog](https://www.goodallelectrical.com.au/blog): Articles on electrical safety, smart home automation, and venue AV planning.
+- [Contact](https://www.goodallelectrical.com.au/contact): Quote request form, phone, email, service area.
+- [Privacy Policy](https://www.goodallelectrical.com.au/privacy-policy): Data collection and third-party tools (Google Analytics, Meta Pixel, Microsoft Clarity).
+
+## Service area
+
+All of Gippsland, Victoria, Australia, based in Sale. Full town list: Sale, Maffra, Stratford, Heyfield, Rosedale, Longford, Newry, Boisdale, Briagolong, Tinamba, Cowwarr, Glengarry, Munro, Loch Sport, Seaspray, Golden Beach, Bairnsdale, Traralgon, Morwell, Yarram, Wonthaggi, Warragul.
