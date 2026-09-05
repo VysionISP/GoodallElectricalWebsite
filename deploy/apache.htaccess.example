@@ -1,0 +1,22 @@
+# Goodall Electrical — example .htaccess for clean URLs on Apache
+# (serves /services from services.html without a redirect or renaming any files)
+#
+# Only needed if the Ubuntu VM is running Apache instead of Nginx — requires
+# mod_rewrite enabled (a2enmod rewrite) and AllowOverride All for this directory.
+# Drop this file as .htaccess in the site's document root.
+
+RewriteEngine On
+
+# If someone links directly to the old *.html URL, send them to the clean one
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Serve the real .html file for a clean-URL request, without changing the
+# address bar (e.g. /services internally serves services.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Custom 404 page (already in the repo)
+ErrorDocument 404 /404.html

@@ -1,0 +1,39 @@
+# Goodall Electrical — example Nginx server block for clean URLs
+# (serves /services from services.html without a redirect or renaming any files)
+#
+# Copy the relevant bits into /etc/nginx/sites-available/goodallelectrical
+# and adjust `root` to wherever this repo is deployed on the VM, e.g.
+# /var/www/goodallelectrical.
+
+server {
+    listen 80;
+    listen [::]:80;
+    server_name goodallelectrical.com.au www.goodallelectrical.com.au;
+
+    root /var/www/goodallelectrical;
+    index index.html;
+
+    # Serve clean URLs: /services -> services.html, /area-sale -> area-sale.html, etc.
+    # Falls through to a real directory or a literal file if one exists, then 404.
+    location / {
+        try_files $uri $uri.html $uri/ =404;
+    }
+
+    # If someone links directly to the old *.html URL, send them to the clean one
+    # (redirect happens before try_files above, so this only fires for literal .html hits)
+    location ~ ^/(.+)\.html$ {
+        return 301 /$1;
+    }
+
+    # Custom 404 page (already in the repo)
+    error_page 404 /404.html;
+
+    # Cache static assets
+    location ~* \.(?:css|js|png|jpg|jpeg|gif|svg|ico|woff2?)$ {
+        expires 30d;
+        access_log off;
+    }
+}
+
+# Once TLS is set up (e.g. via certbot), add a second server block on :443
+# with ssl_certificate/ssl_certificate_key, and redirect the :80 block above to https.

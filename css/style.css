@@ -252,11 +252,10 @@ section{ position:relative; }
 
 .hero-artwork{
   position:absolute;
-  top:50%; right:-40px;
-  transform:translateY(-50%);
-  width:46%;
-  max-width:560px;
-  min-width:380px;
+  top:20px; right:0;
+  width:34%;
+  max-width:420px;
+  min-width:320px;
   pointer-events:none;
   z-index:1;
   opacity:.9;
