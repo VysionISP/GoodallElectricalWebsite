@@ -248,7 +248,33 @@ section{ position:relative; }
 
 /* Hero ------------------------------------------------------------------- */
 .hero{ padding:96px 0 0; }
-.hero-inner{ max-width:760px; }
+.hero-inner{ max-width:760px; position:relative; z-index:2; }
+
+.hero-artwork{
+  position:absolute;
+  top:50%; right:-40px;
+  transform:translateY(-50%);
+  width:46%;
+  max-width:560px;
+  min-width:380px;
+  pointer-events:none;
+  z-index:1;
+  opacity:.9;
+}
+.hero-artwork svg{ width:100%; height:auto; display:block; }
+.hero-artwork .hw-ring{ animation:hw-spin 60s linear infinite; transform-origin:280px 280px; }
+.hero-artwork .hw-ring-2{ animation:hw-spin-rev 90s linear infinite; transform-origin:280px 280px; }
+.hero-artwork .hw-node-box{ fill:var(--black-soft); stroke:rgba(246,197,0,.5); }
+.hero-artwork .hw-node-icon{ stroke:var(--yellow); }
+.hero-artwork .hw-trace{ stroke:rgba(246,197,0,.28); }
+.hero-artwork .hw-pulse{ fill:var(--yellow); }
+.hero-artwork .hw-core-ring{ stroke:rgba(246,197,0,.35); }
+@keyframes hw-spin{ from{ transform:rotate(0deg); } to{ transform:rotate(360deg); } }
+@keyframes hw-spin-rev{ from{ transform:rotate(360deg); } to{ transform:rotate(0deg); } }
+@media (max-width: 1200px){ .hero-artwork{ display:none; } }
+@media (prefers-reduced-motion: reduce){
+  .hero-artwork .hw-ring, .hero-artwork .hw-ring-2{ animation:none; }
+}
 .hero h1{
   font-size:clamp(44px, 7vw, 88px);
   color:var(--white);
