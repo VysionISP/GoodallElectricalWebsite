@@ -371,11 +371,108 @@ src="https://www.facebook.com/tr?id=1037388322425058&ev=PageView&noscript=1"
           <p class="section-intro">CBUS is a low-voltage control network that runs alongside your home's wiring, linking switches, dimmers, sensors and relays on a dedicated data cable instead of relying on Wi-Fi or a cloud hub. Every switch on the network can control every light, in any combination — so one button can trigger a "movie night" scene across an entire living area, and a schedule can dim outdoor lighting at dusk without anyone touching a switch.</p>
           <p class="section-intro" style="margin-top:16px;">Because it's wired and Australian-designed for local conditions, it's the system a lot of electricians reach for on new builds and full renovations, where the cabling can go in before the walls close up.</p>
         </div>
-        <figure class="tile tile-glow-1" style="aspect-ratio:1/1;">
+        <figure class="tile tile-feature tile-glow-1" style="aspect-ratio:1/1;">
           <div class="tile-grid"></div>
           <span class="tile-tag">CBUS</span>
-          <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="5"/></svg></span>
+          <span class="tile-icon">
+            <svg class="diagram-svg" viewBox="0 0 220 220">
+              <path class="diagram-mesh" d="M34,34 L186,34"/>
+              <path class="diagram-mesh" d="M34,186 L186,186"/>
+              <path class="diagram-line" d="M110,110 L34,34"/>
+              <path class="diagram-line" d="M110,110 L186,34"/>
+              <path class="diagram-line" d="M110,110 L34,186"/>
+              <path class="diagram-line" d="M110,110 L186,186"/>
+              <circle class="diagram-ring" cx="110" cy="110" r="48"/>
+              <circle class="diagram-node" cx="34" cy="34" r="6"/>
+              <circle class="diagram-node" cx="186" cy="34" r="6"/>
+              <circle class="diagram-node" cx="34" cy="186" r="6"/>
+              <circle class="diagram-node" cx="186" cy="186" r="6"/>
+            </svg>
+            <span class="diagram-hub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="5"/></svg></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L34 34')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L186 34')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L34 186')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L186 186')"></span>
+          </span>
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM DIAGRAM -->
+  <section class="section border-top">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>How It Connects</div>
+          <h2>One controller, every system.</h2>
+          <p class="section-intro">A single wired CBUS network ties lighting, climate, blinds, security and app/touch control together — one point of control instead of five separate apps and remotes.</p>
+        </div>
+      </div>
+      <div class="system-diagram reveal">
+        <svg class="system-diagram-svg" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <polygon class="sd-mesh" points="300,60 430,145 385,300 215,300 170,145"/>
+          <path class="sd-line" d="M300,190 L300,60"/>
+          <path class="sd-line" d="M300,190 L430,145"/>
+          <path class="sd-line" d="M300,190 L385,300"/>
+          <path class="sd-line" d="M300,190 L215,300"/>
+          <path class="sd-line" d="M300,190 L170,145"/>
+
+          <circle class="sd-hub-ring" cx="300" cy="190" r="58"/>
+          <circle class="sd-hub" cx="300" cy="190" r="50"/>
+          <g transform="translate(282,162) scale(1.5)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-hub-icon">
+            <circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.5 2.5M16.5 16.5L19 19M19 5l-2.5 2.5M7.5 16.5L5 19"/>
+          </g>
+
+          <circle class="sd-node" cx="300" cy="60" r="34"/>
+          <g transform="translate(284,44) scale(1.3333)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-node-icon">
+            <circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"/>
+          </g>
+
+          <circle class="sd-node" cx="430" cy="145" r="34"/>
+          <g transform="translate(414,129) scale(1.3333)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-node-icon">
+            <path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="5"/>
+          </g>
+
+          <circle class="sd-node" cx="385" cy="300" r="34"/>
+          <g transform="translate(369,284) scale(1.3333)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-node-icon">
+            <rect x="4" y="4" width="16" height="16" rx="1"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="13" x2="20" y2="13"/><line x1="4" y1="17" x2="20" y2="17"/>
+          </g>
+
+          <circle class="sd-node" cx="215" cy="300" r="34"/>
+          <g transform="translate(199,284) scale(1.3333)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-node-icon">
+            <path d="M2 8.5a15 15 0 0 1 20 0"/><path d="M5.5 12a10 10 0 0 1 13 0"/><path d="M9 15.5a5 5 0 0 1 6 0"/><circle cx="12" cy="19" r="1"/>
+          </g>
+
+          <circle class="sd-node" cx="170" cy="145" r="34"/>
+          <g transform="translate(154,129) scale(1.3333)" stroke="currentColor" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" class="sd-node-icon">
+            <path d="M12 3l7 3v6c0 5-3 7.5-7 9-4-1.5-7-4-7-9V6l7-3Z"/><polyline points="9 12 11.5 14.5 15.5 10"/>
+          </g>
+
+          <circle class="sd-pulse" r="5" cx="300" cy="190">
+            <animateMotion dur="2.6s" begin="0s" repeatCount="indefinite" path="M0,0 L0,-130"/>
+          </circle>
+          <circle class="sd-pulse" r="5" cx="300" cy="190">
+            <animateMotion dur="2.6s" begin="0.5s" repeatCount="indefinite" path="M0,0 L130,-45"/>
+          </circle>
+          <circle class="sd-pulse" r="5" cx="300" cy="190">
+            <animateMotion dur="2.6s" begin="1s" repeatCount="indefinite" path="M0,0 L85,110"/>
+          </circle>
+          <circle class="sd-pulse" r="5" cx="300" cy="190">
+            <animateMotion dur="2.6s" begin="1.5s" repeatCount="indefinite" path="M0,0 L-85,110"/>
+          </circle>
+          <circle class="sd-pulse" r="5" cx="300" cy="190">
+            <animateMotion dur="2.6s" begin="2s" repeatCount="indefinite" path="M0,0 L-130,-45"/>
+          </circle>
+        </svg>
+        <div class="sd-labels">
+          <span class="sd-label sd-label-hub" style="left:50%;top:65%;">CBUS Controller</span>
+          <span class="sd-label" style="left:50%;top:28.5%;">Lighting</span>
+          <span class="sd-label" style="left:71.67%;top:49.75%;">Climate</span>
+          <span class="sd-label" style="left:64.17%;top:88.5%;">Blinds</span>
+          <span class="sd-label" style="left:35.83%;top:88.5%;">App &amp; Touch</span>
+          <span class="sd-label" style="left:28.33%;top:49.75%;">Security</span>
+        </div>
       </div>
     </div>
   </section>
@@ -477,10 +574,29 @@ src="https://www.facebook.com/tr?id=1037388322425058&ev=PageView&noscript=1"
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 12 10 18 20 6"/></svg>A proper electrical asset, not a gadget</li>
           </ul>
         </div>
-        <figure class="tile tile-glow-2" style="aspect-ratio:1/1;">
+        <figure class="tile tile-feature tile-glow-2" style="aspect-ratio:1/1;">
           <div class="tile-grid"></div>
           <span class="tile-tag">Control &amp; Automation</span>
-          <span class="tile-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><polygon points="13 2 4 14 11 14 10 22 20 10 12 10 13 2"/></svg></span>
+          <span class="tile-icon">
+            <svg class="diagram-svg" viewBox="0 0 220 220">
+              <path class="diagram-mesh" d="M34,34 L186,34"/>
+              <path class="diagram-mesh" d="M34,186 L186,186"/>
+              <path class="diagram-line" d="M110,110 L34,34"/>
+              <path class="diagram-line" d="M110,110 L186,34"/>
+              <path class="diagram-line" d="M110,110 L34,186"/>
+              <path class="diagram-line" d="M110,110 L186,186"/>
+              <circle class="diagram-ring" cx="110" cy="110" r="48"/>
+              <circle class="diagram-node" cx="34" cy="34" r="6"/>
+              <circle class="diagram-node" cx="186" cy="34" r="6"/>
+              <circle class="diagram-node" cx="34" cy="186" r="6"/>
+              <circle class="diagram-node" cx="186" cy="186" r="6"/>
+            </svg>
+            <span class="diagram-hub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11 12 4l8 7"/><path d="M6 10v9h12v-9"/><rect x="10" y="14" width="4" height="5"/></svg></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L34 34')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L186 34')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L34 186')"></span>
+            <span class="pulse-dot" style="offset-path:path('M110 110 L186 186')"></span>
+          </span>
         </figure>
       </div>
     </div>

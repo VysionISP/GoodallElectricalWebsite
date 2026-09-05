@@ -33,6 +33,8 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Meta Pixel, Microsoft Clarity, and Google Analytics 4 installed sitewide, with explicit per-page title/path
 - [x] JSON-LD: LocalBusiness/Electrician, Service (with per-town areaServed), BreadcrumbList, FAQPage schema (506 blocks, all validated)
 - [x] Linked the "Where We Work" town pills on services.html to the 20 area hub pages (were previously plain, non-clickable text, and listed two towns — Wonthaggi, Warragul — with no page behind them)
+- [x] Animated circuit/network-diagram icon treatment for all 5 service category tiles (services.html + each service hub page + CBUS) — large centered icon medallion with a rotating scan ring, flowing connector lines and traveling signal pulses to 4 corner nodes, replacing the old small static corner icon
+- [x] Dedicated "Featured System" callout section for CBUS on the service-control-automation.html hub page (previously only a small buried text link), plus a full animated system-architecture diagram on the CBUS page itself (CBUS Controller hub branching to Lighting, Climate, Blinds, Security, App & Touch, with animated traveling pulses along each connection) — reachable from the hub page, sitemap.html, sitemap.xml and llms.txt
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
 - [x] Zero broken internal links across all 148 pages (checked programmatically)
 
