@@ -4,7 +4,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 
 **Columns:** Breadcrumb = BreadcrumbList JSON-LD present. FAQ = FAQPage JSON-LD present (only applies to pages with an FAQ accordion).
 
-**88 pages audited.** All 88 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4).
+**148 pages audited.** All 148 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4).
 
 ## Main (10)
 
@@ -18,7 +18,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `privacy-policy.html` | Yes | - |
 | `projects.html` | Yes | - |
 | `services.html` | Yes | - |
-| `sitemap.html` | Yes | - |
+| `sitemap.html` | - | - |
 | `testimonials.html` | Yes | - |
 
 ## Service Hub (5)
@@ -37,7 +37,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 |---|---|---|
 | `service-control-automation-cbus.html` | Yes | Yes |
 
-## Service + Town (40)
+## Service + Town (100)
 
 | Page | Breadcrumb | FAQ |
 |---|---|---|
@@ -61,6 +61,66 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `service-antennas-tinamba.html` | Yes | Yes |
 | `service-antennas-traralgon.html` | Yes | Yes |
 | `service-antennas-yarram.html` | Yes | Yes |
+| `service-audio-visual-bairnsdale.html` | Yes | Yes |
+| `service-audio-visual-boisdale.html` | Yes | Yes |
+| `service-audio-visual-briagolong.html` | Yes | Yes |
+| `service-audio-visual-cowwarr.html` | Yes | Yes |
+| `service-audio-visual-glengarry.html` | Yes | Yes |
+| `service-audio-visual-golden-beach.html` | Yes | Yes |
+| `service-audio-visual-heyfield.html` | Yes | Yes |
+| `service-audio-visual-loch-sport.html` | Yes | Yes |
+| `service-audio-visual-longford.html` | Yes | Yes |
+| `service-audio-visual-maffra.html` | Yes | Yes |
+| `service-audio-visual-morwell.html` | Yes | Yes |
+| `service-audio-visual-munro.html` | Yes | Yes |
+| `service-audio-visual-newry.html` | Yes | Yes |
+| `service-audio-visual-rosedale.html` | Yes | Yes |
+| `service-audio-visual-sale.html` | Yes | Yes |
+| `service-audio-visual-seaspray.html` | Yes | Yes |
+| `service-audio-visual-stratford.html` | Yes | Yes |
+| `service-audio-visual-tinamba.html` | Yes | Yes |
+| `service-audio-visual-traralgon.html` | Yes | Yes |
+| `service-audio-visual-yarram.html` | Yes | Yes |
+| `service-communications-bairnsdale.html` | Yes | Yes |
+| `service-communications-boisdale.html` | Yes | Yes |
+| `service-communications-briagolong.html` | Yes | Yes |
+| `service-communications-cowwarr.html` | Yes | Yes |
+| `service-communications-glengarry.html` | Yes | Yes |
+| `service-communications-golden-beach.html` | Yes | Yes |
+| `service-communications-heyfield.html` | Yes | Yes |
+| `service-communications-loch-sport.html` | Yes | Yes |
+| `service-communications-longford.html` | Yes | Yes |
+| `service-communications-maffra.html` | Yes | Yes |
+| `service-communications-morwell.html` | Yes | Yes |
+| `service-communications-munro.html` | Yes | Yes |
+| `service-communications-newry.html` | Yes | Yes |
+| `service-communications-rosedale.html` | Yes | Yes |
+| `service-communications-sale.html` | Yes | Yes |
+| `service-communications-seaspray.html` | Yes | Yes |
+| `service-communications-stratford.html` | Yes | Yes |
+| `service-communications-tinamba.html` | Yes | Yes |
+| `service-communications-traralgon.html` | Yes | Yes |
+| `service-communications-yarram.html` | Yes | Yes |
+| `service-control-automation-bairnsdale.html` | Yes | Yes |
+| `service-control-automation-boisdale.html` | Yes | Yes |
+| `service-control-automation-briagolong.html` | Yes | Yes |
+| `service-control-automation-cowwarr.html` | Yes | Yes |
+| `service-control-automation-glengarry.html` | Yes | Yes |
+| `service-control-automation-golden-beach.html` | Yes | Yes |
+| `service-control-automation-heyfield.html` | Yes | Yes |
+| `service-control-automation-loch-sport.html` | Yes | Yes |
+| `service-control-automation-longford.html` | Yes | Yes |
+| `service-control-automation-maffra.html` | Yes | Yes |
+| `service-control-automation-morwell.html` | Yes | Yes |
+| `service-control-automation-munro.html` | Yes | Yes |
+| `service-control-automation-newry.html` | Yes | Yes |
+| `service-control-automation-rosedale.html` | Yes | Yes |
+| `service-control-automation-sale.html` | Yes | Yes |
+| `service-control-automation-seaspray.html` | Yes | Yes |
+| `service-control-automation-stratford.html` | Yes | Yes |
+| `service-control-automation-tinamba.html` | Yes | Yes |
+| `service-control-automation-traralgon.html` | Yes | Yes |
+| `service-control-automation-yarram.html` | Yes | Yes |
 | `service-electrical-bairnsdale.html` | Yes | Yes |
 | `service-electrical-boisdale.html` | Yes | Yes |
 | `service-electrical-briagolong.html` | Yes | Yes |
@@ -139,4 +199,3 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 
 - Google Search Console verification (needs a tag/DNS record from you)
 - Google Ads conversion tracking (once you run Google Ads)
-- Per-town service pages for Audio Visual / Control & Automation / Communications (currently only Electrical + TV Antennas have them — see TODO.md)

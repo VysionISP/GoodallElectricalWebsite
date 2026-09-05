@@ -20,23 +20,24 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Clean URLs sitewide (no .html) — see deploy/nginx.conf.example and deploy/apache.htaccess.example for the Ubuntu VM server config needed to serve them
 - [x] Full site build (home, services, projects, blog + posts, about, contact)
 - [x] Five dedicated service pages with real copy/rates/FAQ (Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
-- [x] 40 service+town landing pages (20 towns × Electrical + TV Antennas)
+- [x] 100 service+town landing pages (20 towns × all 5 services: Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
+- [x] "Service Areas" town-pill sections added to the Audio Visual, Control & Automation and Communications hub pages, linking to their new town pages
 - [x] 20 general area hub pages (one per town, covering all five services) — footer "Areas" column links to these
 - [x] 9 individual project detail pages, linked from every project card sitewide
 - [x] Testimonials page
 - [x] Privacy Policy page (discloses GA4, Meta Pixel, Clarity)
 - [x] 404 page
-- [x] HTML sitemap page (sitemap.html) + XML sitemap (sitemap.xml, 86 URLs) + robots.txt
+- [x] HTML sitemap page (sitemap.html) + XML sitemap (sitemap.xml, 147 URLs) + robots.txt
 - [x] Real logo + favicon (cropped from the real file)
 - [x] Real phone number, ACN, five-service lineup everywhere
 - [x] Meta Pixel, Microsoft Clarity, and Google Analytics 4 installed sitewide, with explicit per-page title/path
 - [x] JSON-LD: LocalBusiness/Electrician, BreadcrumbList, FAQPage schema (217 blocks, all validated)
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
-- [x] Zero broken internal links across all 87 pages (checked programmatically)
+- [x] Zero broken internal links across all 148 pages (checked programmatically)
 
 ## Worth considering later (not asked for yet)
 
-- Per-town service pages for Audio Visual / Control & Automation / Communications (skipped — those are commercial/venue services, less likely to carry local "near me" search traffic than Electrical/Antennas; the general area hub pages already link to the main service pages for these three)
+- Update the 20 `area-{town}.html` general hub pages to link to the new Audio Visual / Control & Automation / Communications town pages (currently link to the main hub pages for those three services)
 - **Google Search Console** — need a verification meta tag or DNS record
 - **Google Ads conversion tracking** — only relevant once you're running Google Ads; would track form submits + phone clicks as conversions
 - **Google Local Services Ads (Google Guaranteed)** — pay-per-lead, badge shows above regular search ads, strong fit for a trades business

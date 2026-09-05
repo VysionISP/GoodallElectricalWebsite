@@ -13,7 +13,7 @@ Goodall Electrical is a single licensed crew covering five trades — electrical
 - [Communications & Networks](https://www.goodallelectrical.com.au/service-communications.html): Structured cabling, Wi-Fi design, CCTV, EFTPOS/POS networks.
 - [TV Antennas](https://www.goodallelectrical.com.au/service-antennas.html): New installs, storm-damage repair, signal diagnosis, extra TV points. Matchmaster antennas as standard.
 
-Each service above also has dedicated pages for individual Gippsland towns (Electrical and TV Antennas only) at URLs like `/service-electrical-sale.html`, `/service-antennas-maffra.html`, etc. — see [the sitemap](https://www.goodallelectrical.com.au/sitemap.html) for the full list.
+Each of the five services above also has dedicated pages for all 20 individual Gippsland towns served — e.g. `/service-electrical-sale.html`, `/service-antennas-maffra.html`, `/service-audio-visual-bairnsdale.html`, `/service-control-automation-traralgon.html`, `/service-communications-morwell.html` — see [the sitemap](https://www.goodallelectrical.com.au/sitemap.html) for the full list (100 town pages total).
 
 ## Company
 
