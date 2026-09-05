@@ -4,7 +4,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 
 **Columns:** Service = schema.org Service JSON-LD present (service pages only, with areaServed set to the specific town for town pages). Breadcrumb = BreadcrumbList JSON-LD present. FAQ = FAQPage JSON-LD present (only applies to pages with an FAQ accordion).
 
-**151 pages audited.** All 151 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4). 109 service pages (hub, CBUS sub-page, and all service+town pages) additionally carry Service schema with areaServed.
+**152 pages audited.** All 152 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4). 109 service pages (hub, CBUS sub-page, and all service+town pages) additionally carry Service schema with areaServed.
 
 ## Main (10)
 
@@ -170,7 +170,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `area-traralgon.html` | - | Yes | - |
 | `area-yarram.html` | - | Yes | - |
 
-## Project (9)
+## Project (10)
 
 | Page | Service | Breadcrumb | FAQ |
 |---|---|---|---|
@@ -180,6 +180,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `project-maffra-cool-store.html` | - | Yes | - |
 | `project-sale-business-park.html` | - | Yes | - |
 | `project-sale-greyhound-av.html` | - | Yes | - |
+| `project-sporting-legends-sportsbar.html` | - | Yes | - |
 | `project-stratford-renovation.html` | - | Yes | - |
 | `project-the-vines-on-avon.html` | - | Yes | - |
 | `project-wonthaggi-workmens-fitout.html` | - | Yes | - |

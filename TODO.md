@@ -7,7 +7,8 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [ ] **Real email address** — footer/contact still use a placeholder (`info@goodallelectrical.com.au`). Confirm if that's actually correct or swap it.
 - [ ] **Real street address** — only "Sale, VIC" is used (no street number). Fine for schema/local SEO as-is, but confirm if you want a full address shown.
 - [ ] **Licence / REC number** — only ACN (684 711 224) shows. Add licence number if you want it displayed.
-- [ ] **Photos** — every project tile, service page and blog post still uses an abstract gradient/grid placeholder — no real jobsite photos, team photos, or venue shots anywhere on the site. This is the single biggest thing standing between this site and looking fully "real." Send photos (via GitHub upload, same as the logo) whenever you have them and I'll swap them in everywhere they're needed.
+- [ ] **More project photos** — 4 of 10 project pages now have a real photo (Sale Greyhound Racing, The Vines on Avon, Wonthaggi Workmen's Club, Sporting Legends). The other 6 (Sale Business Park, Gippsland Storage Facility, Maffra Cool Store, Longford Family Home, Stratford Renovation, Loch Sport Holiday House) still use the abstract placeholder tile — send photos whenever you have them.
+- [ ] **More client logos** — 6 client logos are now shown in the homepage "Trusted By" strip (Greyhound Racing Victoria/Sale, The Vines on Avon, Wonthaggi Workmen's Club, Sporting Legends, Star Hotel Sale, Maffra Community Sports Club). Send more if you want the strip to grow.
 - [ ] **Social links** — Facebook/Instagram/LinkedIn icons in the footer currently link to `#` (nowhere). Send the real profile URLs.
 - [ ] **Real testimonials** — testimonials.html currently has only the one quote already used on the homepage. Send more client feedback to fill it out.
 
@@ -17,17 +18,16 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] SEO-STATUS.md — auto-generated audit of every page (which schema/tags are present), regenerate via the audit script rather than hand-editing
 - [x] llms.txt at site root — structured summary for AI/LLM crawlers to read and index
 - [x] robots.txt updated to explicitly welcome known AI crawlers (GPTBot, ClaudeBot, Google-Extended, PerplexityBot, CCBot, etc.)
-- [x] Clean URLs sitewide (no .html) — see deploy/nginx.conf.example and deploy/apache.htaccess.example for the Ubuntu VM server config needed to serve them
 - [x] Full site build (home, services, projects, blog + posts, about, contact)
 - [x] Five dedicated service pages with real copy/rates/FAQ (Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
 - [x] 100 service+town landing pages (20 towns × all 5 services: Electrical, Audio Visual, Control & Automation, Communications, TV Antennas)
 - [x] "Service Areas" town-pill sections added to the Audio Visual, Control & Automation and Communications hub pages, linking to their new town pages
 - [x] 20 general area hub pages (one per town, covering all five services) — footer "Areas" column links to these
-- [x] 9 individual project detail pages, linked from every project card sitewide
+- [x] 10 individual project detail pages, linked from every project card sitewide
 - [x] Testimonials page
 - [x] Privacy Policy page (discloses GA4, Meta Pixel, Clarity)
 - [x] 404 page
-- [x] HTML sitemap page (sitemap.html) + XML sitemap (sitemap.xml, 147 URLs) + robots.txt
+- [x] HTML sitemap page (sitemap.html) + XML sitemap (sitemap.xml, 151 URLs) + robots.txt
 - [x] Real logo + favicon (cropped from the real file)
 - [x] Real phone number, ACN, five-service lineup everywhere
 - [x] Meta Pixel, Microsoft Clarity, and Google Analytics 4 installed sitewide, with explicit per-page title/path
@@ -38,7 +38,10 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Dedicated residential CBUS page (service-control-automation-cbus-residential.html) and commercial CBUS page (service-control-automation-cbus-commercial.html), linked from a new "Residential or Commercial?" section on the main CBUS page
 - [x] "Found CBUS in your home or business?" support page (cbus-existing-system.html) for people who've bought a property with an existing CBUS system — how to tell you have it, what to do next, common issues, contact CTA. Linked from the main CBUS page and both new residential/commercial pages
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
-- [x] Zero broken internal links across all 148 pages (checked programmatically)
+- [x] Zero broken internal links across all 152 pages (checked programmatically)
+- [x] Real project photos received and put to use: Sale Greyhound Racing Club (action shot), The Vines on Avon (aerial), and Wonthaggi Workmen's Club (exterior) now show real photos on their project pages, the homepage "Selected Work" cards, projects.html, and service-audio-visual.html's project grid — replacing the abstract placeholder tile everywhere they appeared
+- [x] New project page: Sporting Legends Sale — sportsbar fitout (project-sporting-legends-sportsbar.html), built from a real interior photo, added to projects.html and service-audio-visual.html
+- [x] "Trusted By" client logo strip added to the homepage — 6 real client logos (Greyhound Racing Victoria/Sale, The Vines on Avon, Wonthaggi Workmen's Club, Sporting Legends, Star Hotel Sale, Maffra Community Sports Club) shown as light silhouettes that reveal full colour on hover
 
 ## Worth considering later (not asked for yet)
 
@@ -52,3 +55,4 @@ Tracking what's left before this site is fully ready to replace the live one.
 - **Nextdoor** — hyper-local community app, growing for trade recommendations in Australia
 - **Google Business Profile** — not code, but the single highest-value thing for local search ("electrician near me" / Maps pack); make sure it's claimed and fully filled out
 - Compressed/optimized image pipeline once real photos are in (currently only the logo + favicon are raster assets)
+- Clean URLs (no .html) — deploy/nginx.conf.example and deploy/apache.htaccess.example are ready for when the Ubuntu VM's server rewrite rules are actually in place; the site itself uses plain .html links for now since that migration caused a live 404 last time it was tried

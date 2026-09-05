@@ -349,6 +349,13 @@ section{ position:relative; }
   transition:transform .5s ease;
 }
 .project-card:hover .tile-grid, a:hover > .tile .tile-grid{ transform:scale(1.06); }
+.tile .tile-photo{
+  position:absolute; inset:0;
+  width:100%; height:100%;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+.project-card:hover .tile-photo, a:hover > .tile .tile-photo{ transform:scale(1.06); }
 .tile .tile-icon{ transition:border-color .25s ease, transform .25s ease; }
 .project-card:hover .tile-icon, a:hover > .tile .tile-icon{ border-color:var(--yellow); transform:translateY(-2px); }
 .tile .tile-grid{
@@ -560,6 +567,36 @@ section{ position:relative; }
 
 .check-list li{ display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; color:var(--gray); font-size:15px; }
 .check-list svg{ width:18px; height:18px; stroke:var(--yellow); flex:none; margin-top:2px; }
+
+/* Trust logo strip ---------------------------------------------------------*/
+.trust-strip{
+  display:flex;
+  flex-wrap:wrap;
+  gap:40px;
+  align-items:center;
+  justify-content:center;
+}
+.trust-logo{
+  background:none;
+  border:none;
+  padding:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:56px;
+}
+.trust-logo img{
+  max-height:48px;
+  max-width:160px;
+  width:auto;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  filter:grayscale(1) brightness(0) invert(1);
+  opacity:.55;
+  transition:filter .25s ease, opacity .25s ease;
+}
+.trust-logo:hover img{ filter:none; opacity:1; }
 
 /* Testimonial -------------------------------------------------------------*/
 .testimonial{
