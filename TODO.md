@@ -35,6 +35,8 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Linked the "Where We Work" town pills on services.html to the 20 area hub pages (were previously plain, non-clickable text, and listed two towns — Wonthaggi, Warragul — with no page behind them)
 - [x] Dedicated "Featured System" callout section for CBUS on the service-control-automation.html hub page (previously only a small buried text link) with its own heading, highlights and CTA button — reachable from the hub page, sitemap.html, sitemap.xml and llms.txt
 - [x] Tried an animated circuit-diagram treatment for the service category tiles and a CBUS system-architecture diagram — reverted, didn't land well and broke on narrower viewports. Tiles and the CBUS page are back to plain static icons.
+- [x] Dedicated residential CBUS page (service-control-automation-cbus-residential.html) and commercial CBUS page (service-control-automation-cbus-commercial.html), linked from a new "Residential or Commercial?" section on the main CBUS page
+- [x] "Found CBUS in your home or business?" support page (cbus-existing-system.html) for people who've bought a property with an existing CBUS system — how to tell you have it, what to do next, common issues, contact CTA. Linked from the main CBUS page and both new residential/commercial pages
 - [x] Canonical tags + Open Graph/Twitter card tags on every page
 - [x] Zero broken internal links across all 148 pages (checked programmatically)
 

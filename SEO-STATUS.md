@@ -4,7 +4,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 
 **Columns:** Service = schema.org Service JSON-LD present (service pages only, with areaServed set to the specific town for town pages). Breadcrumb = BreadcrumbList JSON-LD present. FAQ = FAQPage JSON-LD present (only applies to pages with an FAQ accordion).
 
-**148 pages audited.** All 148 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4). 106 service pages (hub, CBUS sub-page, and all service+town pages) additionally carry Service schema with areaServed.
+**151 pages audited.** All 151 have: meta description, canonical tag, Open Graph/Twitter tags, LocalBusiness (Electrician) schema, and all three tracking scripts (Meta Pixel, Microsoft Clarity, GA4). 109 service pages (hub, CBUS sub-page, and all service+town pages) additionally carry Service schema with areaServed.
 
 ## Main (10)
 
@@ -18,7 +18,7 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `privacy-policy.html` | - | Yes | - |
 | `projects.html` | - | Yes | - |
 | `services.html` | - | Yes | - |
-| `sitemap.html` | - | Yes | - |
+| `sitemap.html` | - | - | - |
 | `testimonials.html` | - | Yes | - |
 
 ## Service Hub (5)
@@ -31,10 +31,13 @@ Auto-generated audit of every page on the site, last run 2026-09-05. Regenerate 
 | `service-control-automation.html` | Yes | Yes | Yes |
 | `service-electrical.html` | Yes | Yes | Yes |
 
-## Service Sub-Page (1)
+## Service Sub-Page (4)
 
 | Page | Service | Breadcrumb | FAQ |
 |---|---|---|---|
+| `cbus-existing-system.html` | Yes | Yes | Yes |
+| `service-control-automation-cbus-commercial.html` | Yes | Yes | Yes |
+| `service-control-automation-cbus-residential.html` | Yes | Yes | Yes |
 | `service-control-automation-cbus.html` | Yes | Yes | Yes |
 
 ## Service + Town (100)

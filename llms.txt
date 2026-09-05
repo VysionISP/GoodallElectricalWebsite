@@ -9,7 +9,7 @@ Goodall Electrical is a single licensed crew covering five trades — electrical
 - [Electrical](https://www.goodallelectrical.com.au/service-electrical.html): Switchboard upgrades, EV chargers, three-phase, rewires, lighting, compliance.
 - [Audio Visual](https://www.goodallelectrical.com.au/service-audio-visual.html): Venue AV for pubs, clubs and function rooms — source switching, multi-zone audio, projectors, touch-panel control.
 - [Control & Automation](https://www.goodallelectrical.com.au/service-control-automation.html): Lighting, HVAC and venue control automation (Crestron, KNX, custom).
-- [CBUS Lighting Control](https://www.goodallelectrical.com.au/service-control-automation-cbus.html): Wired CBUS lighting/automation network installation, wall plate design, scene control.
+- [CBUS Lighting Control](https://www.goodallelectrical.com.au/service-control-automation-cbus.html): Wired CBUS lighting/automation network installation, wall plate design, scene control. Dedicated sub-pages for [residential](https://www.goodallelectrical.com.au/service-control-automation-cbus-residential.html) and [commercial](https://www.goodallelectrical.com.au/service-control-automation-cbus-commercial.html) CBUS, plus a support page for [properties with an existing CBUS system](https://www.goodallelectrical.com.au/cbus-existing-system.html) already installed.
 - [Communications & Networks](https://www.goodallelectrical.com.au/service-communications.html): Structured cabling, Wi-Fi design, CCTV, EFTPOS/POS networks.
 - [TV Antennas](https://www.goodallelectrical.com.au/service-antennas.html): New installs, storm-damage repair, signal diagnosis, extra TV points. Matchmaster antennas as standard.
 
