@@ -14,10 +14,14 @@ The PAT must never be:
 ```
 cd server
 npm install
-cp .env.example .env
-# edit .env and set FERGUS_PAT to the real token
+./setup.sh   # interactive — prompts for the token, hidden input, writes .env
 npm start
 ```
+
+`setup.sh` never echoes the token to the screen or shell history, and sets
+`.env` to `600` permissions (owner read/write only) when it's done. Run it
+directly on whichever machine will actually run the server — don't run it
+somewhere else and copy `.env` over.
 
 The server listens on port 3001 by default (`PORT` in `.env`).
 
@@ -26,7 +30,7 @@ The server listens on port 3001 by default (`PORT` in `.env`).
 1. Copy the `server/` directory to the VM, e.g. `/var/www/goodallelectrical/server`.
 2. Install Node 18+ if not already present.
 3. `cd server && npm install --omit=dev`
-4. Create `/var/www/goodallelectrical/server/.env` on the VM directly (never via git) with the real `FERGUS_PAT`.
+4. Run `./setup.sh` on the VM and paste the real Fergus PAT when prompted — this creates `.env` directly on the machine (never via git).
 5. Run it as a systemd service so it restarts on boot/crash. Example unit file
    at `/etc/systemd/system/goodall-enquiry.service`:
 
