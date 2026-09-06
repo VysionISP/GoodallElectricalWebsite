@@ -377,6 +377,7 @@ section{ position:relative; }
 .tile .tile-icon svg{ width:22px; height:22px; stroke:var(--yellow); fill:none; }
 .tile .tile-tag{
   position:absolute;
+  z-index:2;
   left:20px; top:20px;
   font-family:var(--font-mono);
   font-size:11px;

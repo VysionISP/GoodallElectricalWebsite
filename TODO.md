@@ -42,6 +42,7 @@ Tracking what's left before this site is fully ready to replace the live one.
 - [x] Real project photos received and put to use: Sale Greyhound Racing Club (action shot), The Vines on Avon (aerial), and Wonthaggi Workmen's Club (exterior) now show real photos on their project pages, the homepage "Selected Work" cards, projects.html, and service-audio-visual.html's project grid — replacing the abstract placeholder tile everywhere they appeared
 - [x] New project page: Sporting Legends Sale — sportsbar fitout (project-sporting-legends-sportsbar.html), built from a real interior photo, added to projects.html and service-audio-visual.html
 - [x] "Trusted By" client logo strip added to the homepage — 6 real client logos (Greyhound Racing Victoria/Sale, The Vines on Avon, Wonthaggi Workmen's Club, Sporting Legends, Star Hotel Sale, Maffra Community Sports Club) shown as light silhouettes that reveal full colour on hover
+- [x] Replaced the empty gradient/grid placeholder tile with real project photos on all 5 services.html service teasers, each of the 5 service hub pages' hero tiles, both service-antennas.html tiles, and both service-control-automation-cbus.html tiles (14 tiles total) — reusing the 4 real venue photos received so far. Fixed a z-index bug found along the way where the tile-tag label was being covered by the new photo.
 
 ## Worth considering later (not asked for yet)
 
