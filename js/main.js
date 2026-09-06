@@ -111,16 +111,56 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Contact form — front-end only, no backend wired up
+  // Contact form — posts to the server-side /api/enquiry endpoint, which
+  // relays the enquiry into Fergus. See server/README.md for setup.
   var form = document.querySelector('#contact-form');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var status = form.querySelector('.form-status');
-      if (status) {
-        status.textContent = 'Thanks — this is a demo form with no backend connected yet. Call or email us directly using the details on this page.';
-        status.style.color = 'var(--yellow)';
+      var button = form.querySelector('button[type="submit"]');
+      var setStatus = function (text, color) {
+        if (status) {
+          status.textContent = text;
+          status.style.color = color;
+        }
+      };
+
+      var data = {
+        name: form.name.value.trim(),
+        phone: form.phone.value.trim(),
+        email: form.email.value.trim(),
+        service: form.service.value,
+        message: form.message.value.trim()
+      };
+
+      if (!data.name || !data.phone || !data.email || !data.message) {
+        setStatus('Please fill in your name, phone, email and job details.', 'var(--danger)');
+        return;
       }
+
+      button.disabled = true;
+      setStatus('Sending…', 'var(--gray)');
+
+      fetch('/api/enquiry', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Request failed');
+          return res.json();
+        })
+        .then(function () {
+          setStatus('Thanks — your enquiry has been sent. We\'ll be in touch shortly.', 'var(--ok)');
+          form.reset();
+        })
+        .catch(function () {
+          setStatus('Something went wrong sending that. Please call 03 4130 5012 or email us directly.', 'var(--danger)');
+        })
+        .finally(function () {
+          button.disabled = false;
+        });
     });
   }
 });

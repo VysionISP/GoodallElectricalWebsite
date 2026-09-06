@@ -20,3 +20,10 @@ RewriteRule ^(.*)$ $1.html [L]
 
 # Custom 404 page (already in the repo)
 ErrorDocument 404 /404.html
+
+# Contact form enquiry relay — see server/README.md. Runs as its own process
+# (systemd service "goodall-enquiry") on port 3001; requires mod_proxy and
+# mod_proxy_http enabled (a2enmod proxy proxy_http). Applies regardless of
+# whether clean URLs above are in use.
+RewriteCond %{REQUEST_URI} ^/api/
+RewriteRule ^api/(.*)$ http://127.0.0.1:3001/api/$1 [P,L]

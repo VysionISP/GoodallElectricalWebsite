@@ -19,6 +19,17 @@ server {
         try_files $uri $uri.html $uri/ =404;
     }
 
+    # Contact form enquiry relay — see server/README.md. Runs as its own
+    # process (systemd service "goodall-enquiry") on port 3001; nginx just
+    # proxies /api/ through to it. Applies regardless of whether clean URLs
+    # above are in use.
+    location /api/ {
+        proxy_pass http://127.0.0.1:3001;
+        proxy_http_version 1.1;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+
     # If someone links directly to the old *.html URL, send them to the clean one
     # (redirect happens before try_files above, so this only fires for literal .html hits)
     location ~ ^/(.+)\.html$ {

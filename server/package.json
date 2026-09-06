@@ -1,0 +1,16 @@
+{
+  "name": "goodallelectrical-enquiry-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Server-side relay that forwards the website contact form to the Fergus Enquiries API.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
