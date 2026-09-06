@@ -5,6 +5,7 @@
 // here, as a server-side environment variable — it is never sent to the
 // browser and never committed to the repo. See README.md for setup.
 
+require('dotenv').config();
 const express = require('express');
 
 const PORT = process.env.PORT || 3001;
